@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi"
+    app:startDestination="@id/nav_first_frag">
+    <fragment
+        android:id="@+id/nav_first_frag"
+        android:name="com.leading.navigationtest.FirstFragment"
+        android:label="@string/first_fragment"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_first_frag_to_second_frag"
+            app:destination="@id/nav_second_frag"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <argument
+            android:name="data"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_second_frag"
+        android:name="com.leading.navigationtest.SecondFragment"
+        android:label="@string/second_fragment"
+        tools:layout="@layout/fragment_second">
+        <action
+            android:id="@+id/action_second_frag_to_third_frag"
+            app:destination="@id/nav_third_frag"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <argument
+            android:name="booleanData"
+            app:argType="boolean" />
+        <argument
+            android:name="longData"
+            app:argType="long" />
+        <argument
+            android:name="intData"
+            app:argType="integer" />
+        <argument
+            android:name="floatData"
+            app:argType="float" />
+        <argument
+            android:name="stringData"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_third_frag"
+        android:name="com.leading.navigationtest.ThirdFragment"
+        android:label="@string/third_fragment"
+        tools:layout="@layout/fragment_third">
+        <action
+            android:id="@+id/action_third_frag_to_fourth_frag"
+            app:destination="@id/nav_fourth_frag"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_fourth_frag"
+        android:name="com.leading.navigationtest.FourthFragment"
+        android:label="@string/fourth_fragment"
+        tools:layout="@layout/fragment_fourth" />
+</navigation>

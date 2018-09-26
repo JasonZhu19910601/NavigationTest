@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NavigationTest</string>
+    <string name="first_fragment">First fragment</string>
+    <string name="second_fragment">Second fragment</string>
+    <string name="third_fragment">Third fragment</string>
+    <string name="fourth_fragment">Fourth fragment</string>
+    <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="home_fragment">Home fragment</string>
+    <string name="dash_board_fragment">Dash board fragment</string>
+    <string name="notification_fragment">Notification fragment</string>
+</resources>
